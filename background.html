@@ -10,11 +10,9 @@ var r;
 
 var replaceForwards = function(tab) {  
   chrome.tabs.executeScript( null, {file: "replace_script.js"} );
-  chrome.browserAction.setBadgeText( {text:""} );
 };
 
 var checkComplete = function(tabId,info) {
-   chrome.browserAction.setBadgeText( {text:"~"} );
    if (info.status == "complete") {
       // Ugly hack to deal with google search results post-loading results
       // Even though page is considered finished loading, the changes get overwritten
