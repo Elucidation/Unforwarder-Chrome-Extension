@@ -1,0 +1,9 @@
+{
+   "name": "My First Extension",
+   "version": "1.0",
+   "description": "First google extension ever",
+   "browser_action": {
+      "default_icon": "icon.png"
+   },
+   "permissions": ["http://api.flickr.com/"]
+}
