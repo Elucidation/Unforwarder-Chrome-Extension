@@ -1,6 +1,6 @@
 {
    "name": "Google search unforwarder",
-   "version": "1.0",
+   "version": "1.01",
    "description": "Replaces google search results forwarder links with original links",
    "background_page": "background.html",
    "browser_action": {
