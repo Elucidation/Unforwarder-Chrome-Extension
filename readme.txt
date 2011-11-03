@@ -2,7 +2,7 @@ This is a chrome extension which only runs on google search results pages.
 It replaces all the google-forwarded search results links with the original links on page.
 
 To use:
--Download the zip or tar.gz and unzip to a folder
+-Download the zip or tar.gz and unzip to a folder (On Github it's the little zip icon in the top left of window)
 -In Google Chrome click the top-right extensions icon -> Tools -> Extensions
 -In the top right of inside window check Developer mode.
 -Load unpacked extension, navigate and select unzipped folder
