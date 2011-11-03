@@ -26,6 +26,9 @@ req.open(
         "sort=relevance&" +  // another good one is "interestingness-desc"
         "per_page=20",
     true);
+var testStr = "/url?sa=t&rct=j&q=code%20replacement&source=web&cd=2&sqi=2&ved=0CCIQFjAB&url=http%3A%2F%2Fwww.joshdweiss.com%2F2010%2F11%2F09%2Fhow-to-photomechanic-code-replacement%2F&ei=DQSyTtWvG9K4tgeKu7WbAg&usg=AFQjCNEaRSWWAcfqy56rr6N-9jo6B7RjIg&sig2=QeC83c61O75tNv58sPF-zQ";
+var reg = new RegExp("url=([^&]+)");
+var decodedStr = decodeURIComponent(testStr.match(reg)[1]);
 req.onload = showPhotos;
 req.send(null);
 
@@ -47,4 +50,5 @@ function constructImageURL(photo) {
       "_" + photo.getAttribute("secret") +
       "_s.jpg";
 }
+
 </script>
