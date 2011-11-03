@@ -1,14 +1,17 @@
 This is a chrome extension which only runs on google search results pages.
 It replaces all the google-forwarded search results links with the original links on page.
 
-To use:
+You can right-click the button to hide (it'll keep working), can be brought back in extensions manager.
+While running, you can click the button to run on the google search result page directly if page took way too long to load.
+
+
+Install instructions:
 -Download the zip or tar.gz and unzip to a folder (On Github it's the little [ZIP] icon in the top left of window)
 -In Google Chrome click the top-right extensions icon -> Tools -> Extensions
 -In the top right of inside window check Developer mode.
 -Load unpacked extension, navigate and select unzipped folder
 -Done.
 
-While running, you can click the button to run on the google search result page directly if page took way too long to load.
 
 If you want to see what it does:
 -Disable extension
