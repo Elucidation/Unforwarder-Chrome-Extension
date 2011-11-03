@@ -4,10 +4,8 @@
 //              http://www.google.com/url?sa=t&rct=j&q=fear%20not%20the%20valient&source=web&cd=1&ved=0CCAQFjAA&url=http%3A%2F%2Fen.wikiquote.org%2Fwiki%2FCourage&ei=QiiyTu2QGZHAtgfB762cAg&usg=AFQjCNHOaIV8vNJ1fxGxdNmYkl3v9jpumw&sig2=IbeYKkY9u-lfRGUA38gRtw
 // Fixed ending url: 
 //              http://en.wikiquote.org/wiki/Courage
+// https://github.com/Elucidation/Unforwarder-Chrome-Extension
 // Author : Sameer Ansari
-var i = 0;
-var r;
-
 var replaceForwards = function(tab) {  
   chrome.tabs.executeScript( null, {file: "replace_script.js"} );
 };
@@ -27,6 +25,7 @@ var checkComplete = function(tabId,info) {
 }
 
 chrome.tabs.onUpdated.addListener(checkComplete);
+// Button click listener
 chrome.browserAction.onClicked.addListener(replaceForwards);
 </script>
 
