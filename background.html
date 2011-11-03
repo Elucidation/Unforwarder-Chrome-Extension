@@ -6,16 +6,25 @@
 //              http://en.wikiquote.org/wiki/Courage
 // Author : Sameer Ansari
 var i = 0;
+var r;
+
 var replaceForwards = function(tab) {  
   chrome.tabs.executeScript( null, {file: "replace_script.js"} );
-  chrome.browserAction.setBadgeText( {text:String(i)} );
-  i++;
+  chrome.browserAction.setBadgeText( {text:""} );
 };
 
-var checkComplete = function(tab,info) {
-   chrome.browserAction.setBadgeText( {text:info.status} );
+var checkComplete = function(tabId,info) {
+   chrome.browserAction.setBadgeText( {text:"~"} );
    if (info.status == "complete") {
-      chrome.tabs.getCurrent(replaceForwards);
+      // Ugly hack to deal with google search results post-loading results
+      // Even though page is considered finished loading, the changes get overwritten
+      // So run script at 0.5 seconds, 1, 1.5, 2, 5, and 10 seconds.
+      setTimeout(replaceForwards, 500);
+      setTimeout(replaceForwards, 1000);
+      setTimeout(replaceForwards, 1500);
+      setTimeout(replaceForwards, 2000);
+      setTimeout(replaceForwards, 5000);
+      setTimeout(replaceForwards, 10000);
    }
 }
 
