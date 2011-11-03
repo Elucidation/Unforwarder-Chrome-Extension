@@ -21,4 +21,4 @@ http://www.google.com/url?sa=t&rct=j&q=inception%20corgi&source=web&cd=1&ved=0CB
 You should see something like: http://www.youtube.com/watch?v=JaNc0YsQcNE
 
 
-Courtesy of Sam
+Courtesy of Sam (Sameer Ansari - elucidation@gmail.com)
