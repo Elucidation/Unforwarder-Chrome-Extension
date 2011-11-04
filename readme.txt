@@ -4,6 +4,7 @@ It replaces all the google-forwarded search results links with the original link
 You can right-click the button to hide (it'll keep working), can be brought back in extensions manager.
 While running, you can click the button to run on the google search result page directly if page took way too long to load.
 
+The replace_script.js is violently plagurized from http://userscripts.org/scripts/show/95092
 
 Install instructions:
 -Download the zip or tar.gz and unzip to a folder (On Github it's the little [ZIP] icon in the top left of window)
@@ -24,4 +25,4 @@ http://www.google.com/url?sa=t&rct=j&q=inception%20corgi&source=web&cd=1&ved=0CB
 You should see something like: http://www.youtube.com/watch?v=JaNc0YsQcNE
 
 
-Courtesy of Sam (Sameer Ansari - elucidation@gmail.com)
+Courtesy of Sam & Allan
