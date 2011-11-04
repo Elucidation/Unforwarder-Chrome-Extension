@@ -5,22 +5,14 @@
 // Fixed ending url: 
 //              http://en.wikiquote.org/wiki/Courage
 // https://github.com/Elucidation/Unforwarder-Chrome-Extension
-// Author : Sameer Ansari
+// Authors : Sam & Allan
 var replaceForwards = function(tab) {  
   chrome.tabs.executeScript( null, {file: "replace_script.js"} );
 };
 
 var checkComplete = function(tabId,info) {
    if (info.status == "complete") {
-      // Ugly hack to deal with google search results post-loading results
-      // Even though page is considered finished loading, the changes get overwritten
-      // So run script at 0.5 seconds, 1, 1.5, 2, 5, and 10 seconds.
-      setTimeout(replaceForwards, 500);
-      setTimeout(replaceForwards, 1000);
-      setTimeout(replaceForwards, 1500);
-      setTimeout(replaceForwards, 2000);
-      setTimeout(replaceForwards, 5000);
-      setTimeout(replaceForwards, 10000);
+      replaceForwards();
    }
 }
 
