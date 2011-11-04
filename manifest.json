@@ -1,5 +1,5 @@
 {
-   "name": "Google search unforwarder",
+   "name": "Google Search Unforwarder",
    "version": "1.2",
    "description": "Replaces google search results forwarder links with original links",
    "background_page": "background.html",
