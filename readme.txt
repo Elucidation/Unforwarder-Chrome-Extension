@@ -1,6 +1,11 @@
 This is a chrome extension which only runs on google search results pages.
 It replaces all the google-forwarded search results links with the original links on page.
 
+
+If you just want to use the link, 
+Run it directly from the Downloads tab or click https://github.com/downloads/Elucidation/Unforwarder-Chrome-Extension/unforwarder.crx
+
+
 You can right-click the button to hide (it'll keep working), can be brought back in extensions manager.
 While running, you can click the button to run on the google search result page directly if page took way too long to load.
 
